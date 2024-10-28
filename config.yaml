@@ -1,6 +1,6 @@
 settings:
   title: 'Tim''s Cloud Apps'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  #url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -18,23 +18,25 @@ monitors:
   - id: about-timvo-au # unique identifier
     name: About Me
     #description: 'About Me' # default=empty
-    url: 'https://about.timvo.au/' # URL to fetch
+    url: 'https://about.timvo.au' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
   - id: AGH-SYD
     name: Adguard Home Sydney
     #description: 'Built for anything connected to the Internet.'
-    url: 'https://syd.idns.au/'
+    url: 'https://syd.idns.au'
     method: GET
     expectStatus: 200
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
   - id: AGH-VIE
     name: Adguard Home Vietnam
-    url: 'https://vn.idns.au/'
+    url: 'https://vn.idns.au'
     method: GET
     expectStatus: 200
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
