@@ -16,8 +16,8 @@ settings:
 
 monitors:
   - id: about-timvo-au # unique identifier
-    name: about.timvo.au
-    description: 'About Me' # default=empty
+    name: About Me
+    #description: 'About Me' # default=empty
     url: 'https://about.timvo.au/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
@@ -27,14 +27,14 @@ monitors:
   - id: AGH-SYD
     name: Adguard Home Sydney
     #description: 'Built for anything connected to the Internet.'
-    url: 'https://syd.idns.au'
+    url: 'https://syd.idns.au/'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
   - id: AGH-VIE
     name: Adguard Home Vietnam
-    url: 'https://vn.idns.au'
+    url: 'https://vn.idns.au/'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
