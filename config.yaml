@@ -40,3 +40,27 @@ monitors:
     expectStatus: 200
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
+
+  - id: AGH-SIN
+    name: Adguard Home Singapore
+    url: 'https://sin.idns.au'
+    method: GET
+    expectStatus: 200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+  - id: WG-VIE
+    name: WireGuard Vietnam
+    url: 'https://wg.nhutvo.com/'
+    method: GET
+    expectStatus: 200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+  - id: WG-MEL
+    name: WireGuard Melbourne
+    url: 'https://wg.timvo.net/'
+    method: GET
+    expectStatus: 200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
